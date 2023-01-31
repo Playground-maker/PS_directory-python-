@@ -35,3 +35,39 @@
 #     if(num == n):
 #         break
 # print(cnt)    
+
+
+
+# 1차원 배열 갯수 세기
+
+# n = int(input())
+# n_list = list(map(int, input().split()))
+# v = int(input())
+
+# print(n_list.count(v))
+
+
+# 1차원 배열 -> X보다 작은 수
+
+# N, X = map(int, input().split())
+# n_list = list(map(int, input().split()))
+
+# for i in range(N):
+#     if n_list[i] < X:
+#         print(n_list[i], end=' ')
+
+
+# 과제 안 내신 분..?
+
+# students = [i for i in range(1, 31)]
+
+# for _ in range(28):
+#     num = int(input())
+#     students.remove(num)
+    
+# print(min(students))
+# print(max(students))
+
+
+a = 123
+print(sum(map(int, str(a))))
