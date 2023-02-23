@@ -23,22 +23,38 @@
 
 # 개미 전사 - 개미 전사가 얻을 수 있는 식량의 최댓값 출력
 
-n = int(input())
-# 모든 식량 정보 입력받기
-array = list(map(int, input().split()))
+# n = int(input())
+# # 모든 식량 정보 입력받기
+# array = list(map(int, input().split()))
 
-# 앞서 계산된 결과를 저장하기 위한 DP 테이블 초기화
-d = [0] * 100
+# # 앞서 계산된 결과를 저장하기 위한 DP 테이블 초기화
+# d = [0] * 100
 
-# 다이나믹 프로그래밍 진행(보텀업) 
-d[0] = array[0]
-d[1] = max(array[0], array[1]) 
+# # 다이나믹 프로그래밍 진행(보텀업) 
+# d[0] = array[0]
+# d[1] = max(array[0], array[1]) 
 
-for i in range(2, n):
-  d[i] = max(d[i - 1], d[i - 2] + array[i])
+# for i in range(2, n):
+#   d[i] = max(d[i - 1], d[i - 2] + array[i])
 
-print(d[n - 1])  
+# print(d[n - 1])  
   
+
+# 효율적인 화폐 구성
+n, m = map(int, input().split())
+array = []
+
+for i in range(n):
+  array.append(int(input()))
+  
+d = [10001] * (m + 1)
+
+d[0] = 0
+for i in range(n):
+  # 각각의 화폐 단위 i
+  for j in range():
+    # 각각의 금액 j  
+
 
 
 
