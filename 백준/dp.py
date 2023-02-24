@@ -53,7 +53,7 @@ d[0] = 0
 for i in range(n):
   # 각각의 화폐 단위 i
   for j in range():
-    # 각각의 금액 j  
+    # 각각의 금액 j   
 
 
 
